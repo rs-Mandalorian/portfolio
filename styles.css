@@ -27,9 +27,9 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 
 
 /* Area cards lead with their subject and heading above the divider. */
-.area-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;width:100%;min-height:155px;border-bottom:1px solid #becbb7;padding-bottom:20px;margin-bottom:24px}
+.area-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;width:100%;min-height:0;border-bottom:1px solid #becbb7;padding-bottom:15.875px;margin-bottom:24px}
 .area-header>span{font-size:23px;line-height:1;color:#57735a}
 .area-card .area-header .eyebrow{min-height:0}
 .area-card .area-header h3{margin:12px 0 0}
-.related-grid .area-header{min-height:120px}
+.related-grid .area-header{min-height:0}
 @media(max-width:800px){.area-header,.related-grid .area-header{min-height:0}}
