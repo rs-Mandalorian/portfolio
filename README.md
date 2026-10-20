@@ -1,43 +1,37 @@
 # Rob Schmelz portfolio
 
-Personal portfolio, prepared October 20, 2026. Focus: digital platform and web strategy leadership.
+Product & Digital Platform Leadership.
 
-GitHub owner: `rs-Mandalorian`.
-Dedicated repository: `rs-Mandalorian/portfolio`.
-Target project website: https://rs-mandalorian.github.io/portfolio/
+Website: https://rs-mandalorian.github.io/portfolio/
+Repository: https://github.com/rs-Mandalorian/portfolio
 
-The target address becomes available only after the repository and its Pages deployment are successfully configured.
+## Pages
 
-## Preview
+- `index.html`: overview, approach, career history, and independent projects.
+- `product-leadership.html`: discovery, product decisions, experimentation, roadmaps, and delivery.
+- `digital-platforms.html`: CMS modernization, structured content, search, self-service, and content operations.
+- `ecommerce-customer-experience.html`: shopping experiences, analytics, checkout, and fulfillment.
 
-Open `dist/index.html` in a browser, or from this folder run:
+Every page has navigation to the other areas and approved email and LinkedIn links.
 
-```powershell
-python -m http.server 8765 --bind 127.0.0.1 --directory dist
-```
+## Files and editing
 
-Visit http://127.0.0.1:8765. There is no dependency installation or build step.
+In the published repository and deployment ZIP, website files are at the root. In the local career-center workspace, editable website files live in `portfolio/dist/`.
 
-## Edit
+- Edit the HTML files for wording and page structure.
+- `styles.css` controls the responsive layout, colors, and typography.
+- `app.js` controls the mobile menu. Core content and case-study disclosures work without JavaScript.
+- Inter 4.1 regular and italic font files are hosted with the website. `Inter-LICENSE.txt` contains the font license, which applies to the supplied Inter font files.
+- `mark.svg` is the portfolio icon.
 
-- `dist/index.html`: all public wording and page structure.
-- `dist/styles.css`: responsive layout, colors, and print styles.
-- `dist/app.js`: mobile navigation. Core content and project disclosures work without JavaScript.
-- `dist/mark.svg`: original monogram/favicon.
-- `dist/InterVariable.woff2` and `dist/InterVariable-Italic.woff2`: self-hosted Inter 4.1 fonts from https://rsms.me/inter/.
-- `dist/Inter-LICENSE.txt`: Inter's SIL Open Font License, included with the font files.
-- `REVIEW.md` in the local working copy: editorial decisions, evidence references, and questions. This private working note is excluded from the deployment ZIP and public site.
+There is no build step or dependency installation. Open `index.html` directly, or serve the website folder with a static HTTP server.
 
-## GitHub Pages deployment
+## Hosting and updates
 
-Use a **separate portfolio repository**. Do not make the career-center repository public or upload its evidence, applications, or other working files.
+GitHub Pages publishes from the `main` branch and `/ (root)` folder. Upload website files from the local `dist` folder to the repository root. Asset paths are relative and work under `/portfolio/`.
 
-1. Review the content. The email and LinkedIn links are included as approved by Rob. Choose whether a public résumé should be included and prepare an approved version if so.
-2. The local draft banner has been removed and the canonical URL is configured for the project website. Search indexing is allowed.
-3. Copy the deployment ZIP contents into the `rs-Mandalorian/portfolio` repository's root. Include the HTML, CSS, JavaScript, icon, both Inter font files, font license, `.nojekyll`, and this README. The ZIP excludes the private review note.
-4. In GitHub repository Settings → Pages, select **Deploy from a branch**.
-5. Choose the `main` branch and `/ (root)` folder, then save.
+Change the stylesheet version in each HTML file when changing shared CSS so visitors receive the new styling promptly.
 
-GitHub Pages publishes changes pushed to `main` automatically. Upload only the contents of the local `dist` folder when updating website files. Asset paths are relative so CSS, JavaScript, and icons resolve under `/portfolio/`. No custom workflow or build step is needed.
+The deployment ZIP contains website files and this README. Private working notes, deployment tracking, career evidence, and application files remain outside this repository.
 
-GitHub Pages provides public static hosting. This version has no server, form submission, analytics, cookies, external fonts, or external network dependencies.
+This is a static website with no form submission, analytics, cookies, or external network dependencies.
