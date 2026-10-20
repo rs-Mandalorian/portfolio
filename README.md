@@ -24,6 +24,8 @@ Visit http://127.0.0.1:8765. There is no dependency installation or build step.
 - `dist/styles.css`: responsive layout, colors, and print styles.
 - `dist/app.js`: mobile navigation. Core content and project disclosures work without JavaScript.
 - `dist/mark.svg`: original monogram/favicon.
+- `dist/InterVariable.woff2` and `dist/InterVariable-Italic.woff2`: self-hosted Inter 4.1 fonts from https://rsms.me/inter/.
+- `dist/Inter-LICENSE.txt`: Inter's SIL Open Font License, included with the font files.
 - `REVIEW.md` in the local working copy: editorial decisions, evidence references, and questions. This private working note is excluded from the deployment ZIP and public site.
 
 ## GitHub Pages deployment
@@ -32,7 +34,7 @@ Use a **separate portfolio repository**. Do not make the career-center repositor
 
 1. Review the content. The email and LinkedIn links are included as approved by Rob. Choose whether a public résumé should be included and prepare an approved version if so.
 2. The local draft banner has been removed and the canonical URL is configured for the project website. Search indexing is allowed.
-3. Copy the deployment ZIP contents into the `rs-Mandalorian/portfolio` repository's root. Its root should contain `index.html`, `styles.css`, `app.js`, `mark.svg`, `.nojekyll`, and this README. The ZIP excludes the private review note.
+3. Copy the deployment ZIP contents into the `rs-Mandalorian/portfolio` repository's root. Include the HTML, CSS, JavaScript, icon, both Inter font files, font license, `.nojekyll`, and this README. The ZIP excludes the private review note.
 4. In GitHub repository Settings → Pages, select **Deploy from a branch**.
 5. Choose the `main` branch and `/ (root)` folder, then save.
 
