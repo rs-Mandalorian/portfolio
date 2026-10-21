@@ -88,10 +88,10 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 @media(max-width:540px){.personal-section{padding-top:45px;padding-bottom:45px}.personal-copy h2{font-size:33px}.personal-photos{gap:12px}.personal-photos figcaption{font-size:11px}}
 @media print{.personal-section{padding-top:30px;padding-bottom:30px;gap:25px;break-inside:avoid}.personal-copy>p:not(.eyebrow){font-size:10pt}.personal-photos figcaption{font-size:9pt}}
 
-/* Portrait accompanies only the first introductory paragraph. */
-.hero-intro-row{display:flow-root;max-width:475px;margin-top:27px}
-.hero-intro-row .hero-intro{margin-top:0;min-width:0}
-.hero-portrait{display:block;float:left;width:130px;height:auto;margin:0 20px 12px 0;border-radius:5px}
+/* Portrait and short identity introduce the full-width paragraphs. */
+.hero-intro-row{display:grid;grid-template-columns:100px minmax(0,1fr);align-items:center;gap:20px;max-width:475px;margin-top:27px}
+.hero-intro-row+.hero-intro{margin-top:22px}.hero-person-name{font-size:24px;font-weight:500;line-height:1.3;letter-spacing:-.025em}.hero-person-role{font-size:14px;line-height:1.6;color:var(--muted);max-width:240px;margin-top:6px}
+.hero-portrait{display:block;width:100px;height:auto;border-radius:5px}
 @media(max-width:800px){.hero-intro-row{max-width:560px}}
-@media(max-width:540px){.hero-intro-row{margin-top:23px}.hero-portrait{float:none;width:120px;margin:0 0 18px}}
-@media print{.hero-intro-row{margin-top:20px}.hero-portrait{width:85px;margin-right:15px}}
+@media(max-width:540px){.hero-intro-row{grid-template-columns:90px minmax(0,1fr);gap:16px;margin-top:23px}.hero-portrait{width:90px}.hero-person-name{font-size:22px}.hero-person-role{font-size:13px}}
+@media print{.hero-intro-row{grid-template-columns:85px minmax(0,1fr);gap:15px;margin-top:20px}.hero-portrait{width:85px}.hero-person-name{font-size:18px}}
