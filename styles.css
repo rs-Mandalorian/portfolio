@@ -72,3 +72,18 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 /* Four corrected Yext-to-AEM project counts. */
 .library-counts.library-counts-fragments{grid-template-columns:repeat(2,minmax(0,1fr))}
 .library-counts-fragments span{max-width:160px}
+
+/* Personal interests and the supplied photographs. */
+.personal-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:80px;border-bottom:1px solid var(--line)}
+.personal-copy>.eyebrow{margin-bottom:20px}
+.personal-copy h2{margin-bottom:25px}.personal-copy h2 em{color:#477257}
+.personal-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:var(--muted)}
+.personal-copy>p+p{margin-top:16px}
+.personal-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+.personal-photos figure{margin:0;min-width:0}
+.personal-photos img{display:block;width:100%;height:auto;border-radius:2px}
+.personal-photos figcaption{font-size:12px;color:var(--muted);line-height:1.6;margin-top:10px}
+@media(max-width:1000px){.personal-section{gap:30px}.personal-copy h2{font-size:34px}.personal-photos{gap:14px}}
+@media(max-width:800px){.personal-section{grid-template-columns:1fr;gap:30px;padding-top:55px;padding-bottom:55px}.personal-copy{max-width:600px}.personal-photos{max-width:600px;width:100%}}
+@media(max-width:540px){.personal-section{padding-top:45px;padding-bottom:45px}.personal-copy h2{font-size:33px}.personal-photos{gap:12px}.personal-photos figcaption{font-size:11px}}
+@media print{.personal-section{padding-top:30px;padding-bottom:30px;gap:25px;break-inside:avoid}.personal-copy>p:not(.eyebrow){font-size:10pt}.personal-photos figcaption{font-size:9pt}}
