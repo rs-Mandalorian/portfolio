@@ -87,3 +87,11 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 @media(max-width:800px){.personal-section{grid-template-columns:1fr;gap:30px;padding-top:55px;padding-bottom:55px}.personal-copy{max-width:600px}.personal-photos{max-width:600px;width:100%}}
 @media(max-width:540px){.personal-section{padding-top:45px;padding-bottom:45px}.personal-copy h2{font-size:33px}.personal-photos{gap:12px}.personal-photos figcaption{font-size:11px}}
 @media print{.personal-section{padding-top:30px;padding-bottom:30px;gap:25px;break-inside:avoid}.personal-copy>p:not(.eyebrow){font-size:10pt}.personal-photos figcaption{font-size:9pt}}
+
+/* Portrait accompanies only the first introductory paragraph. */
+.hero-intro-row{display:grid;grid-template-columns:130px minmax(0,1fr);align-items:start;gap:20px;max-width:475px;margin-top:27px}
+.hero-intro-row .hero-intro{margin-top:0;min-width:0}
+.hero-portrait{display:block;width:130px;height:auto;border-radius:5px}
+@media(max-width:800px){.hero-intro-row{max-width:560px}}
+@media(max-width:540px){.hero-intro-row{grid-template-columns:1fr;gap:18px;margin-top:23px}.hero-portrait{width:120px}}
+@media print{.hero-intro-row{grid-template-columns:85px minmax(0,1fr);gap:15px;margin-top:20px}.hero-portrait{width:85px}}
