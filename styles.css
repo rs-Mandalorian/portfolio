@@ -95,3 +95,9 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 @media(max-width:800px){.hero-intro-row{max-width:560px}}
 @media(max-width:540px){.hero-intro-row{grid-template-columns:90px minmax(0,1fr);gap:16px;margin-top:23px}.hero-portrait{width:90px}.hero-person-name{font-size:22px}.hero-person-role{font-size:13px}}
 @media print{.hero-intro-row{grid-template-columns:85px minmax(0,1fr);gap:15px;margin-top:20px}.hero-portrait{width:85px}.hero-person-name{font-size:18px}}
+
+/* Small open-circle checkmarks match the adjacent heading color. */
+.section-check{display:block;width:18px;height:18px;flex:0 0 18px;color:inherit;margin-top:4px}
+.focus-panel .section-check{margin-top:7px}
+@media(max-width:800px){.focus-panel .section-check{margin-top:0;margin-bottom:12px}}
+@media(max-width:540px){.focus-panel .section-check{margin-top:7px;margin-bottom:0}}
