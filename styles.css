@@ -101,3 +101,5 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 .focus-panel .section-check{margin-top:7px}
 @media(max-width:800px){.focus-panel .section-check{margin-top:0;margin-bottom:12px}}
 @media(max-width:540px){.focus-panel .section-check{margin-top:7px;margin-bottom:0}}
+
+.platform-art .art-summary{font-size:14px;line-height:1.65;color:#c3d1c6;margin-top:14px}
