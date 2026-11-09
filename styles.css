@@ -103,3 +103,9 @@ nav a[aria-current=page]{color:var(--green);font-weight:700}nav a[aria-current=p
 @media(max-width:540px){.focus-panel .section-check{margin-top:7px;margin-bottom:0}}
 
 .platform-art .art-summary{font-size:14px;line-height:1.65;color:#c3d1c6;margin-top:14px}
+
+/* Featured wireless-industry launches */
+.firsts-heading{max-width:760px;margin-bottom:30px}.firsts-heading .eyebrow{margin-bottom:20px}.firsts-heading>p:last-child{max-width:680px;margin-top:22px;color:var(--muted);line-height:1.8}
+.firsts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.firsts-card h3{font-size:26px;line-height:1.25;letter-spacing:-.03em}.firsts-card .firsts-date{font-size:13px;color:var(--muted);margin-top:12px;margin-bottom:25px}.firsts-card h4{font-size:17px;line-height:1.5;margin-bottom:14px}.firsts-card>p:last-child{color:var(--muted);line-height:1.8;margin:0}.firsts-link{margin-top:26px}
+@media(max-width:700px){.firsts-grid{grid-template-columns:1fr}.firsts-heading h2{font-size:32px}.firsts-card h3{font-size:24px}}
+@media print{.firsts-card{break-inside:avoid}}
